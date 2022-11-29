@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en-US">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width" />
+      <title>The Book
+      </title>
+      <link rel="icon" type="image/x-icon" href="img/favicon.png">
+      <meta name="description" content="A web ontology based on the way Georges Perec wrote Life a User's Manual."/>
+      <meta name="keywords" content="Georges Perec, Life a User's Manual, OuLiPo"/>
+      <link rel="stylesheet" href="css/components.css">
+      <link rel="stylesheet" href="css/responsee.css">
+      <!-- CUSTOM STYLE -->
+      <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" href="css/template-style.css">
+      <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+      <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+      <script type="text/javascript" src="js/modernizr.js"></script>
+      <script type="text/javascript" src="js/responsee.js"></script>
+
+      <!-- lightbox -->
+      <link href="js/lightbox/dist/css/lightbox.css" rel="stylesheet" />
+
+
+      <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]-->
+   </head>
+   <body class="size-1140">
+      <!-- TOP NAV WITH LOGO -->
+      <header class="margin-bottom">
+         <div class="line">
+            <nav>
+               <div class="top-nav">
+                  <p class="nav-text"></p>
+                  <a class="logo" href="index.html">
+                  Life<span>A</span>Web<span>Ontology</span>
+                  </a>
+                  <h1>A KRE Project</h1>
+                  <ul class="top-ul right">
+                    <li>
+                       <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                       <a href="about.html">The Book</a>
+                    </li>
+                    <li>
+                       <a href="project.html">The Project</a>
+                    </li>
+                    <li>
+                       <a href="myDocumentation/index-en.html" target="_blank">Documentation</a>
+                    </li>
+                    <li>
+                       <a href="contact.html">Team</a>
+                    </li>
+                    <!--
+                     <div class="social right">
+                        <a target="_blank" href="https://www.facebook.com/myresponsee">
+                        <i class="icon-facebook_circle icon2x"></i>
+                        </a>
+                        <a target="_blank" href="https://twitter.com/MyResponsee">
+                        <i class="icon-twitter_circle icon2x"></i>
+                        </a>
+                     </div>
+                   -->
+                  </ul>
+               </div>
+            </nav>
+         </div>
+      </header>
+      <!-- MAIN SECTION -->
+      <section id="article-section" class="line">
+         <div class="margin">
+            <!-- ARTICLES -->
+            <div class="s-12 l-9">
+               <!-- ARTICLE 1 -->
+               <article class="margin-bottom">
+                  <!-- text -->
+                  <div class="post-text">
+                     <h1>The Book</h1>
+                     <img src="img/kre/fourmel-hero.png" alt="OuLiPo">
+                     <h2>Life a User’s Manual and the OuLiPo</h2>
+                     <p>
+                       This project starts from the reading of Georges Perec's "Life a User's Manual", a novel published in 1978 and developed on several levels starting from a story generation mechanism that provides for an arbitrary initial ontology.
+                      Georges Perec was a member of the OuLiPo (Ouvroir de Littérature Potentielle = workshop of potential literature), a group of French-speaking writers and mathematicians who aim to create works using, among others, the techniques of constrained writing, where constraints serve to inspire and spark creative thought.
+                    </p>
+                    <p>
+                      Translating the whole story into a formal ontology would have been a titanic job, given the variety of stories told in detail along the 99 chapters of the book. So we initially focused on two things:<br/><br/>
+                      <dl style="color:#637693; padding-left:50px;">
+                        <dd>- The primary and best-known story of Bartlebooth and his jigsaw puzzle paintings;<br/><br/></li>
+                        <dd>- The mechanism used by the author to attribute narrative constraints to the chapters and their sequence.<br/><br/></li>
+                      </dl>
+                    </p>
+
+                    <p>
+                      The latter was configured by Perec as an ontology using the means available at the time (a lot of handwritten tables and manual work), choosing a certain number of parameters and corresponding values and attributing them to the chapters according to some rather complicated combinatorial rules. Fascinated by this mechanism, which Perec himself defined a "story-making machine," and by the possibility of formalizing it, we decided to deepen this topic.
+                    </p>
+                    <p><br/><br/></p>
+
+                    <h2 id="the-story-making-machine">The Story-Making Machine</h2>
+                    <p>
+                      The Story-Making Machine is a tool to build ontologies itself. As such tools are part of the world, they too can be ontologized.<br/><br/>
+                    </p>
+
+                    <h3>First constraint: Knight’s tour</h3>
+                    <p>
+                      The book's main character is a fictitious ten-story condominium in Paris, which may be found at 11 Rue Simon-Crubellier. The address, which Perec conjures up in the 17th arrondissement, is a fictional creation too. Ten rooms per floor make a square of 100 components so one can see them all at once. Perec dedicates a chapter of the book to each chamber. To verify each room's location in the actual palace construction and the narrative's virtual world, he created a schematic picture of the complete structure.
+                    </p>
+                    <img src="img/kre/Perec_original_grid.jpg" alt="Chessboard apartments">
+                    <img src="img/kre/chessboard_apartments.jpg" alt="Chessboard apartments">
+
+                    <p>
+                      The narrative spreads up into ninety-nine rooms (one for each chapter). It progresses according to a rule that is beloved to the OuLiPo: the movements must resemble the L-shaped knight move in chess, touching each room only once. The piece may begin in any square and only travel once through each square. The path is classified as "closed" if it finishes in the beginning square; otherwise, it is defined as "open." Perec’s configuration is an open one.
+                    </p>
+
+                    <img src="img/kre/chessboard_knight_moves.jpg" alt="Chessboard knight moves">
+
+                    <p>
+                      The same limitation suggests that the book is divided into six parts: each time the knight hits all four sides of the chessboard, the part finishes, and a new chapter begins in the next part. The narrative develops throughout all the squares and rooms, starting in the hall and moving to the studio where Bartleboot dies. However, there are 99 chapters: Because Perec willfully disregards the first harsh rule he gave himself, he proceeds directly to chamber 67 following room 65. Room 66, which is at the lower left corner of the structure, is still undiscovered as the storyline based on Polygraphie du Cavalier starts to wane.
+                    </p>
+
+                    <img src="img/kre/Clinamen_cavalier.jpg" alt="Knight clinamen">
+
+                    <p>
+                      Nothing strange, because the clìnamen, an intentional departure from the established norm, is another artifice used by supporters of the OuLiPo. This clìnamen creates an exception in the writing rules. However, there are clinamen scattered at every level, starting with the main storyline, where Bartlebooth ultimately fails the highly organized project of a lifetime.
+                      The meta-explanation for the exception is “a little girl munching the corner of her petit-beurre” painted on the lid of an old biscuit box made of tin at the end of chapter LXVI.
+                    </p>
+
+                    <p><br/><br/></p>
+
+                    <h3>Second constraint: the Cahier des Charges and the Double Latin Square based 10</h3>
+                    <p>
+                      The novel's 1467 characters produce endless combinations of places, things, and events. Even these combos, however, are not left to chance; Perec wishes to regulate them by following a strict protocol, which adds complexity to the rooms'/chapters' rigid and articulated structure. He creates a Cahier des Charges: lists of items organized by ten and attributed to twenty-one pairs of categories, the creation of which has taken Perec two years. The categories are:
+                      <ul>
+                        <li>position – activity;</li>
+                        <li>quote 1 – quote 2;</li>
+                        <li>number – role;</li>
+                        <li>3rd sector – actions;</li>
+                        <li>walls – floors;</li>
+                        <li>epoch – place;</li>
+                        <li>style – furnishings;</li>
+                        <li>length – different;</li>
+                        <li>age and sex – animals;</li>
+                        <li>clothes – fabrics (type);</li>
+                        <li>fabrics (materials) – colors;</li>
+                        <li>accessories – jewelry;</li>
+                        <li>readings – music;</li>
+                        <li>paintings – books;</li>
+                        <li>drinks – foods;</li>
+                        <li>small furnishings – games and toys;</li>
+                        <li>feelings – paintings;</li>
+                        <li>surfaces – volumes;</li>
+                        <li>flowers – ornaments;</li>
+                        <li>absence – false;</li>
+                        <li>couple 1 – couple2</li>
+                      </ul>
+                      <br/>
+                    </p>
+
+                    <p>
+                        Some of the categories may be linked back to tangible things, while others are abstract, and others condition the unfolding of events (as in the actions category) or narrative style (as in the 3rd sector, which concerns specialist writing modes such as food recipes or technical manuals), or even the physical size of the chapter (length category). The categories of absence and fake are also present, allowing the violation of some rules (a different way to insert clìnamen).<br/>
+                        Each category has 10 arbitrary items.<br/>
+
+                    </p>
+                    <figure>
+                      <a href="img/cahier_des_charges.png" data-lightbox="image-1" data-title="Cahier des Charges" title="Cahier des Charges"><img src="img/cahier_des_charges.png" alt="Cahier des Charges" id="cahier"></a>
+                      <figcaption>Perec's Cahier des Charges. Click on the image to enlarge it.</figcaption>
+                    </figure>
+
+                    <br/>
+
+
+                    <p>
+                        Perec joined each of the ten components from the first category with the ten elements from the second to generate 100 distinct pairs of elements for each couple of categories. For instance, all ten of the items in category B, "foods," such as "bread, meat, eggs, crudité, salads, etc.," will be paired with the first item in category 8A, "drinks," which is "water"; the same goes for the second, third, and so on. When Perec repeats the process for each of the 20 couples (apart from the manque/faux pair), 2000 distinct combinations result.
+                    </p>
+
+                    <p>
+                        These combinations were placed in grids identical to those used for the Polygraphie du Cavalier and the design of the building's portion. Perec substitutes the verbal categories listed in Cahier des charges with the relevant numbers to create the grids (from 0 to 9). Perec employs a second tool, a Double Latin Square based 10, which is a chessboard with ten rows and ten columns and two integers from 0 to 9 set in each cell, to rigorously identify the elements (one placed at the top left and one lower right).</p>
+                    <p>
+                    Latin Square is a chessboard with a different number in each square set up so that each digit only occurs once in each row and column. In Perec’s grids, each of the 100 boxes in the 10x10 square has two numbers (this is why it is known as double Latin); these numbers represent the values of the linked categories. Only one instance of each pair must be present in each row and column of that arrangement.
+                    </p>
+                    <p>
+                        As a result, there were 20 double latin squares, one for each pair of categories. Perec could then plot the narration by using the numbers in each square (room/chapter) to select the components from the lists without repeating or omitting anything.
+                        <br/><br/>
+                    </p>
+                    <p>
+                        One last step: using twenty separate Double Latin Squares, components with the same numbers might occur in the same chapter, even if connected to pairs of different categories. Perec rejected this alternative and created 20 Double Latin Squares without repeating pairings of integers in the same cell. He used the principles of Quenine, developed by Raymond Queneau (1950), which were originally taken from Sestina, a literary composition first written by Provençal troubadour Arnout Daniel. This allowed him to switch cells and avoid duplicates in the third dimension of grids too.
+                    </p>
+                    <p>
+                        We will not go into details about the complexity of the quenine, which also includes some other constraints introduced and never explained by Perec. As we are going to see, we don't need it to run the machine.
+                    </p>
+
+                     <!--
+                     <blockquote>
+                        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum
+                        dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim
+                     </blockquote>
+                     <br>
+                     <p>
+                        Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus,
+                        qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram,
+                        anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis
+                        videntur parum clari, fiant sollemnes in futurum.
+                     </p>
+                     <h2>This is subtitle of article</h2>
+                     <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                        aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip
+                        ex ea commodo consequat.
+                     </p>
+                     <p>
+                        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum
+                        dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit
+                        augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming
+                        id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.
+                     </p>
+                   -->
+                  </div>
+               </article>
+               <!-- AD REGION -->
+               <!--
+               <div class="line">
+                  <div class="advertising horizontal">
+                     <img src="img/banner-horizontal.jpg" alt="ad banner">
+                  </div>
+               </div>
+             -->
+            </div>
+            <!-- SIDEBAR -->
+            <div class="s-12 l-3">
+               <aside>
+                  <!-- LATEST POSTS -->
+                  <div class="aside-block margin-bottom">
+                     <h3>Latest posts</h3>
+                     <a class="latest-posts" href="post-1.html">
+                        <h5>Free responsive template</h5>
+                        <p>
+                           Lorem ipsum dolor sit amet, consectetuer adipiscing elit...
+                        </p>
+                     </a>
+                     <a class="latest-posts" href="post-2.html">
+                        <h5>Amazing fashion blog</h5>
+                        <p>
+                           Ut wisi enim ad minim veniam, quis nostrud adipiscing...
+                        </p>
+                     </a>
+                     <a class="latest-posts" href="post-3.html">
+                        <h5>Nice minimalist design</h5>
+                        <p>
+                           Duis autem vemeu iriure dolor adipiscing elit, sed diam...
+                        </p>
+                     </a>
+                     <a class="latest-posts" href="post-4.html">
+                        <h5>With advertising regions</h5>
+                        <p>
+                           Lorem ipsum dolor sit amet, consectetuer adipiscing elit...
+                        </p>
+                     </a>
+                     <a class="latest-posts" href="post-5.html">
+                        <h5>And again - it's totally free!</h5>
+                        <p>
+                           Ut wisi enim ad minim veniam, quis nostrud adipiscing...
+                        </p>
+                     </a>
+                  </div>
+                  <!-- AD REGION -->
+                  <!--
+                  <div class="advertising margin-bottom">
+                     <img src="img/banner.jpg" alt="ad banner">
+                  </div>
+                -->
+               </aside>
+            </div>
+         </div>
+      </section>
+      <!-- FOOTER -->
+      <div class="line">
+         <footer>
+            <div class="s-12 l-8">
+               <p>
+                  Copyright 2015, Vision Design - graphic zoo<br>
+                  All images is purchased from Bigstock. Do not use the image in your website.
+               </p>
+            </div>
+            <div class="s-12 l-4">
+               <a class="right" href="http://www.myresponsee.com" title="Responsive framework">Design and coding<br>
+               by Responsee Team
+               </a>
+            </div>
+         </footer>
+      </div>
+
+      <!-- Lightbox -->
+      <script src="js/lightbox/dist/js/lightbox.js"></script>
+
+   </body>
+</html>
