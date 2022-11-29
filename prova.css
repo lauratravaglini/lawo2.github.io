@@ -14,6 +14,8 @@ h1{
     top:50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    padding-left: 8%;
+    padding-bottom: 1%;
 }
 
 h2 {
@@ -34,6 +36,10 @@ h3 {
     font-weight:200;
     text-align: left;
     margin-bottom: 10px;
+}
+
+span {
+    font-style: italic;
 }
 
 .text {
@@ -84,19 +90,39 @@ article {
     place-content: center;
 }
 
-article:first-child:hover, article:nth-child(9):hover, article:nth-child(10):hover, 
-article:nth-child(11):hover, article:nth-child(12):hover,
-article:nth-child(21):hover, article:nth-child(23):hover, 
-article:nth-child(25):hover, article:nth-child(27):hover, 
-article:nth-child(29):hover, article:nth-child(35):hover, article:nth-child(36):hover {
+article:first-child:hover {
+    background-color: #1e1e1e;
+}
+
+article:nth-child(3):hover, article:nth-child(5):hover, article:nth-child(9):hover, 
+article:nth-child(11):hover, article:nth-child(21):hover, article:nth-child(23):hover, 
+article:nth-child(25):hover, article:nth-child(27):hover, article:nth-child(29):hover, 
+article:nth-child(35):hover, article:nth-child(36):hover,  article:nth-child(37):hover{
     background-color: #1e1e1e;
     color: #F1EDE9 !important;
 }
 
-article:nth-child(21):hover a, article:nth-child(23):hover a, 
+article:nth-child(3):hover a, article:nth-child(5):hover a, article:nth-child(9):hover a, 
+article:nth-child(11):hover a, article:nth-child(21):hover a, article:nth-child(23):hover a, 
 article:nth-child(25):hover a, article:nth-child(27):hover a, 
-article:nth-child(29):hover a {
+article:nth-child(29):hover a, article:nth-child(37):hover a  {
     color: #F1EDE9 !important;
+    font-style: italic;
+}
+
+article:nth-child(4):hover{
+    background-image: url("./img/kre/chessboard_apartments.jpg");
+    background-size: cover;
+}
+
+article:nth-child(6):hover{
+    background-image: url("./img/kre/finestre2.jpg");
+    background-size: cover;
+}
+
+article:nth-child(10):hover {
+    background-image: url("./img/kre/finestre.jpg");
+    background-size: contain;
 }
 
 /*
