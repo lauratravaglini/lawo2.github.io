@@ -10,23 +10,43 @@ h1{
     font-size: 80px;
     font-weight:200;
     text-align: left;
-    margin-left: 5%;
-    margin-bottom: 2%;
+    position: relative;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 h2 {
     font-family: 'Noto Serif Display', serif;
-    font-size: 30px;
+    font-size: 26px;
     font-weight: 200;
     text-align: center;
-    margin: 25% 10%;
+    position: relative;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 
 h3 {
-    text-transform: uppercase;
-    font-size: 30px;
+    font-family: 'Noto Serif Display', serif;
+    font-size: 26px;
     font-weight:200;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.text {
+    position: relative !important;
+    top:50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    padding-right: 8%;
+    padding-left: 8%;
+
+}
+
+.text p {
     text-align: left;
 }
 
@@ -51,7 +71,6 @@ a:hover {
 }
 
 section {
-    min-height: 100vh;
     display: grid;
     grid-auto-columns: 1fr;
     margin-inline: auto;
@@ -61,8 +80,6 @@ section {
 }
 
 article {
-    min-height: 20vh;
-    min-width: 10vh;
     display: inline-block;
     place-content: center;
 }
@@ -71,7 +88,7 @@ article:first-child:hover, article:nth-child(9):hover, article:nth-child(10):hov
 article:nth-child(11):hover, article:nth-child(12):hover,
 article:nth-child(21):hover, article:nth-child(23):hover, 
 article:nth-child(25):hover, article:nth-child(27):hover, 
-article:nth-child(29):hover, article:nth-child(36):hover {
+article:nth-child(29):hover, article:nth-child(35):hover, article:nth-child(36):hover {
     background-color: #1e1e1e;
     color: #F1EDE9 !important;
 }
@@ -82,10 +99,12 @@ article:nth-child(29):hover a {
     color: #F1EDE9 !important;
 }
 
+/*
 article:nth-child(21), article:nth-child(23), article:nth-child(25), 
 article:nth-child(27), article:nth-child(29) {
     padding: 3vh 3vh;
 }
+*/
 
 article:first-child {
     grid-column-start: 1;
@@ -95,20 +114,26 @@ article:first-child {
     border: solid 1px #1e1e1e;
 }
 
-article:first-child:hover #logo, article:nth-child(36):hover #github {
+article:first-child:hover #logo, article:nth-child(35):hover #unibo, article:nth-child(36):hover #github {
     filter: invert(1);
 }
 
 #logo {
     height: 25vh;
     width: auto;
-    margin: 22% 22%;
+    position: relative;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-#github {
+#github, #unibo {
     height: 10vh;
     width: auto;
-    margin: 29% 25%;
+    position: relative;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 article:nth-child(2), article:nth-child(3), article:nth-child(4), article:nth-child(5), article:nth-child(6),
