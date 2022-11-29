@@ -1,15 +1,23 @@
 body {
-	background: none repeat scroll 0 0 #0b192f;
-	color: #fff;
+	background: none repeat scroll #f1ede9;
+	color: #1E1E1E;
 	font-family: roboto;
 	font-weight: 300;
 }
-nav {
-	background: none repeat scroll 0 0 #162b4d;
-	position: relative;
+header {
+	background: none repeat scroll #f1ede9;
+	border-bottom: solid 1px #1E1E1E;
+	position: -webkit-sticky;
+	position: sticky;
 }
+nav {
+	background: none repeat scroll #f1ede9;
+	position: -webkit-sticky;
+	position: sticky;
+}
+
 a.logo {
-	color: #fff;
+	color: #1E1E1E;
 	display: inline-block;
 	font-size: 2.3em;
 	font-weight: 100;
@@ -17,10 +25,11 @@ a.logo {
 	padding: 0.6em;
 }
 a.logo span {
-	color: #d12767;
+	color: #607d94;
 }
+
 header h1 {
-	color: #637693;
+	color: #607d94;
 	display: inline;
 	font-size: 1em;
 	font-weight: 300;
@@ -119,20 +128,29 @@ section p {
 	float: right;
 	text-align: right;
 }
+.post-image {
+	border-right: solid 1px #1E1E1E;
+}
+
 .post-1 {
-	background: none repeat scroll 0 0 #B71757;
+	background: none repeat scroll 0 0 #b1660e;
+	border: solid 1px #1E1E1E;
 }
 .post-2 {
-	background: none repeat scroll 0 0 #0D7E71;
+	background: none repeat scroll 0 0 #607D94;
+	border: solid 1px #1E1E1E;
 }
 .post-3 {
-	background: none repeat scroll 0 0 #b1660e;
+	background: none repeat scroll 0 0 #47302A;
+	border: solid 1px #1E1E1E;
 }
 .post-4 {
-	background: none repeat scroll 0 0 #d12767;
+	background: none repeat scroll 0 0 #C3C7D7;
+	border: solid 1px #1E1E1E;
 }
 .post-5 {
-	background: none repeat scroll 0 0 #2d95bb;
+	background: none repeat scroll 0 0 #1E1E1E;
+	border-left: solid 1px #1E1E1E;
 }
 .aside-block {
 	background: none repeat scroll 0 0 #fff;
@@ -157,17 +175,21 @@ aside p {
 .advertising {
 	background: none repeat scroll 0 0 #fff;
 }
+
 footer {
-	background: none repeat scroll 0 0 #162b4d;
+	background: none repeat scroll #f1ede9;
 	display: inline-block;
 	margin-bottom: 0;
 	margin-top: 1.25em;
 	padding: 1.7em;
 	position: relative;
 	width: 100%;
+	border-top: solid 1px #1E1E1E;
 }
+
+
 footer p, footer a, footer a:link, footer a:active, footer a:visited {
-	color: #637693;
+	color: #1E1E1E;
 	font-size: 0.9em;
 }
 #article-section article {
