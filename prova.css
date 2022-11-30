@@ -7,7 +7,7 @@
 
 h1{
     font-family: 'Noto Serif Display', serif;
-    font-size: calc(5vw + .5rem);
+    font-size: 5vw;
     font-weight: 200;
     text-align: left;
     position: relative;
@@ -20,7 +20,7 @@ h1{
 
 h2 {
     font-family: 'Noto Serif Display', serif;
-    font-size: calc(1.4vw + .5rem);
+    font-size: 1.9vw;
     font-weight: 200;
     text-align: center;
     position: relative;
@@ -32,7 +32,7 @@ h2 {
 
 h3 {
     font-family: 'Noto Serif Display', serif;
-    font-size: calc(1.4vw + .5rem);
+    font-size: 1.9vw;
     font-weight:200;
     text-align: left;
     margin-bottom: 10px;
@@ -139,13 +139,6 @@ article:nth-child(17) {
     background-repeat:repeat-y;
     background-position-x: 50%;
 }
-
-/*
-article:nth-child(21), article:nth-child(23), article:nth-child(25), 
-article:nth-child(27), article:nth-child(29) {
-    padding: 3vh 3vh;
-}
-*/
 
 article:first-child {
     grid-column-start: 1;

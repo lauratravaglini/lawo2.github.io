@@ -7,7 +7,7 @@
 
 h1{
     font-family: 'Noto Serif Display', serif;
-    font-size: 80px;
+    font-size: 5vw;
     font-weight:200;
     text-align: left;
     position: relative;
@@ -20,7 +20,7 @@ h1{
 
 h2 {
     font-family: 'Noto Serif Display', serif;
-    font-size: 26px;
+    font-size: 1.9vw;
     font-weight: 200;
     text-align: center;
     position: relative;
@@ -39,7 +39,7 @@ h5 {
 
 h3 {
     font-family: 'Noto Serif Display', serif;
-    font-size: 26px;
+    font-size: 1.9vw;
     font-weight:200;
     text-align: left;
     margin-bottom: 10px;
@@ -123,26 +123,9 @@ article:nth-child(29):hover a, article:nth-child(37):hover a  {
     font-style: italic;
 }
 
-/*
-article:nth-child(4):hover{
-    background-image: url("./img/kre/chessboard_apartments.jpg");
-    background-size: cover;
-}
-
-article:nth-child(6):hover{
-    background-image: url("./img/kre/finestre2.jpg");
-    background-size: cover;
-}
-
-article:nth-child(10):hover {
-    background-image: url("./img/kre/finestre.jpg");
-    background-size: contain;
-}
-*/
-
 article:nth-child(12) {
     background-image: url("./img/kre/window3.png");
-    background-size: 60%;
+    background-size: 6vw;
     background-repeat:no-repeat;
     background-position-x: 50%;
     background-position-y: 50%;
@@ -150,14 +133,14 @@ article:nth-child(12) {
 
 article:nth-child(13) {
     background-image: url("./img/kre/window1.png");
-    background-size: 60%;
+    background-size: 6vw;
     background-repeat:no-repeat;
     background-position-x: 50%;
     background-position-y: 50%;
 }
 article:nth-child(14) {
     background-image: url("./img/kre/window2.png");
-    background-size:60%;
+    background-size: 6vw;
     background-repeat:no-repeat;
     background-position-x: 50%;
     background-position-y: 50%;
@@ -165,7 +148,7 @@ article:nth-child(14) {
 
 article:nth-child(17) {
     background-image: url("./img/kre/staircase.png");
-    background-size: 90%;
+    background-size: 20vw;
     background-repeat:repeat-y;
     background-position-x: 50%;
 }
@@ -183,8 +166,8 @@ article:first-child:hover #logo, article:nth-child(35):hover #unibo, article:nth
 }
 
 #logo {
-    height: 25vh;
-    width: auto;
+    width: 11vw;
+    height: auto;
     position: relative;
     top:50%;
     left: 50%;
@@ -192,8 +175,8 @@ article:first-child:hover #logo, article:nth-child(35):hover #unibo, article:nth
 }
 
 #github, #unibo {
-    height: 10vh;
-    width: auto;
+    width: 6vw;
+    height: auto;
     position: relative;
     top:50%;
     left: 50%;
@@ -274,10 +257,14 @@ article:nth-child(17) {
     align-content: center;
 }
 
+/*
+
 #longarrow{
     height: 70%;
     margin: 45% 30%;
 }
+
+*/
 
 article:nth-child(20) {
     grid-column-end: span 2; 
